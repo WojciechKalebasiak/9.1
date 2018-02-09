@@ -1,10 +1,10 @@
 function getTriangleArea(a, h) {
-	if(a <= 0 && h <=0) {
+	if(a <= 0 || h <=0) {
 		return 'Nieprawidlowe dane';
 	}
 	return a*h/2;
 }
-var a = prompt("Podaj a: ");
+var a = prompt("Podaj a: "),
 	h = prompt("Podaj h: ");
 
 console.log(getTriangleArea(a,h));
